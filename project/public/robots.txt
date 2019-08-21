@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Host: cryptodnes.bg
+Sitemap: https://cryptodnes.bg/sitemap.xml

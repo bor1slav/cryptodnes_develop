@@ -1,0 +1,11 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/dark-style.css": "/css/dark-style.css",
+    "/css/style.css": "/css/style.css",
+    "/css/app.css": "/css/app.css",
+    "/css/all.css": "/css/all.css",
+    "/js/jquery.dataTables.js": "/js/jquery.dataTables.js",
+    "/js/dataTables.fixedHeader.js": "/js/dataTables.fixedHeader.js",
+    "/css/fixedHeader.dataTables.css": "/css/fixedHeader.dataTables.css",
+    "/css/jquery.dataTables.css": "/css/jquery.dataTables.css"
+}

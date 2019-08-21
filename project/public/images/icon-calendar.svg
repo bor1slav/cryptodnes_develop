@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="round-calendar_today-24px" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{fill:#444}
+        </style>
+    </defs>
+    <path id="Path_29" d="M0 0h16v16H0z" class="cls-1" data-name="Path 29"/>
+    <path id="Path_30" d="M12.8 2.273h-.6v-.637a.6.6 0 1 0-1.2 0v.636H5v-.636a.6.6 0 1 0-1.2 0v.636h-.6A1.242 1.242 0 0 0 2 3.545v10.182A1.242 1.242 0 0 0 3.2 15h9.6a1.242 1.242 0 0 0 1.2-1.273V3.545a1.242 1.242 0 0 0-1.2-1.272zm-.6 11.455H3.8a.621.621 0 0 1-.6-.636V5.455h9.6v7.636a.621.621 0 0 1-.6.636z" class="cls-2" data-name="Path 30"/>
+</svg>

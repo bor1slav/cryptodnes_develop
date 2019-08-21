@@ -1,0 +1,30 @@
+{
+    "name": "gogbog/coingeckoapi",
+    "type": "library",
+    "description": "CoinGecko made easy",
+    "keywords": ["currency","crypto","bitcoin","coin", "gecko"],
+    "homepage": "https://bubrek.com",
+    "authors": [
+        {
+            "name": "gogbog",
+            "email": "gogbog11@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "CoinGecko\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CoinGecko\\Providers\\CoinGeckoServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}

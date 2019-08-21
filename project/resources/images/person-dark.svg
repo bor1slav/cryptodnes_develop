@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="round-person_outline-24px" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{fill:#f8f8f8}
+        </style>
+    </defs>
+    <path id="Path_54" d="M0 0h24v24H0z" class="cls-1" data-name="Path 54"/>
+    <path id="Path_55" d="M11.975 5.894a2.093 2.093 0 1 1-2.093 2.093 2.093 2.093 0 0 1 2.093-2.093m0 8.972c2.961 0 6.081 1.455 6.081 2.093v1.1H5.894v-1.1c0-.638 3.12-2.093 6.081-2.093m0-10.866a3.988 3.988 0 1 0 3.988 3.987A3.986 3.986 0 0 0 11.975 4zm0 8.972C9.313 12.972 4 14.308 4 16.959v1.994a1 1 0 0 0 1 1h13.953a1 1 0 0 0 1-1v-1.994c-.003-2.651-5.316-3.987-7.978-3.987z" class="cls-2" data-name="Path 55" transform="translate(.025 .025)"/>
+</svg>

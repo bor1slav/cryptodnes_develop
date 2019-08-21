@@ -1,0 +1,219 @@
+@media (max-width: 992px) {
+  #coin-view {
+    .nav-section {
+      .nav-list {
+        padding-left: 0;
+      }
+    }
+    .coin-content {
+      .header-table {
+        flex-flow: column;
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #coin-view {
+    .coin-name {
+      flex-flow: column;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .fixedHeader-floating {
+    thead {
+      tr {
+        font-size: 13px;
+      }
+    }
+  }
+  #coins {
+    .coins-content {
+      .coins-table {
+        thead {
+          th {
+            font-size: 13px;
+          }
+        }
+        tbody {
+          td, .rank {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  #coin-view {
+    .side-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .coin-name {
+        padding-bottom: 0;
+      }
+      .nav-section {
+        display: none;
+      }
+    }
+    .coin-content {
+      .header-table {
+        overflow-x: scroll;
+        padding-top: 15px;
+        .coins-table-left {
+          .rank-up {
+            margin-left: 7px;
+          }
+          thead {
+            tr {
+              height: auto;
+            }
+          }
+          tbody {
+            .rank {
+              display: flex;
+            }
+          }
+        }
+      }
+      .content {
+        .coin-details {
+          .detail {
+            width: 100%;
+            max-width: 33.333%;
+          }
+        }
+      }
+    }
+  }
+
+  .no-gutters-sm {
+    margin-right: 0;
+    margin-left: 0;
+
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+@media (max-width: 576px) {
+  #coins {
+    h1 {
+      font-size: 20px;
+    }
+    .coins-content {
+      .pagination {
+        flex-wrap: wrap;
+        border-bottom: none;
+        .page-item {
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 50%;
+          border-radius: 0;
+          &:last-child {
+            width: 100%;
+            .page-link {
+              margin-top: -1px;
+            }
+          }
+          .page-link {
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+          }
+        }
+      }
+      .coins-table {
+        thead {
+          th {
+            font-weight: 500;
+            font-size: 14px;
+          }
+        }
+        .coin-cell {
+          font-size: 14px;
+          .icon {
+            width: 25px;
+          }
+        }
+      }
+    }
+  }
+  #coin-view {
+    .side-wrapper {
+      .coin-name {
+        .icon-logo {
+          max-width: 50px;
+        }
+        .title {
+          font-size: 20px;
+        }
+        .symbol {
+          font-size: 18px;
+        }
+      }
+    }
+    .coin-calculator {
+      .fa-exchange-alt{
+        font-size: 12px;
+      }
+    }
+    .coin-content {
+      .table {
+        display: table;
+        margin-bottom: 7px;
+        &.coins-table-left {
+          thead {
+            th {
+              padding: .3rem;
+            }
+          }
+          tbody {
+            td {
+              padding: 0.3rem;
+            }
+          }
+        }
+        &.coins-table-right {
+          tr {
+            th {
+              &:first-child {
+                padding-left: .3rem;
+              }
+            }
+            td {
+              &:first-child {
+                padding-left: .3rem;
+              }
+            }
+          }
+        }
+      }
+      .content {
+        .coin-details {
+          .detail {
+            min-width: inherit;
+            max-width: 50%;
+            margin-bottom: 20px;
+            .detail-head {
+              min-height: 55px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .coin-live-price{
+    .tradingview-widget-container{
+      div{
+        height: 75vh;
+      }
+    }
+  }
+}

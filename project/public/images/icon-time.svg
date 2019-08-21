@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="round-access_time-24px" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{fill:#444}
+        </style>
+    </defs>
+    <path id="Path_27" d="M0 0h16v16H0z" class="cls-1" data-name="Path 27"/>
+    <path id="Path_28" d="M8.66 2a6.667 6.667 0 1 0 6.673 6.667A6.663 6.663 0 0 0 8.66 2zm.007 12A5.333 5.333 0 1 1 14 8.667 5.332 5.332 0 0 1 8.667 14zM8.52 5.333h-.04a.478.478 0 0 0-.48.48V8.96a.66.66 0 0 0 .327.573l2.767 1.66a.477.477 0 1 0 .487-.82L9 8.84V5.813a.478.478 0 0 0-.48-.48z" class="cls-2" data-name="Path 28" transform="translate(-.667 -.667)"/>
+</svg>

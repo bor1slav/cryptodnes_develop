@@ -1,0 +1,115 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    RewriteBase /
+            RewriteCond %{HTTP_HOST} ^www.cryptodnes.bg [NC]
+            RewriteRule ^(.*)$ https://cryptodnes.bg/$1 [L,R=301]
+
+
+       RewriteRule category/novini/scamnovini  https://cryptodnes.bg/novini/kriptokrimi  [R=302,L]
+       RewriteRule category/новини/scam_новини  https://cryptodnes.bg/novini/kriptokrimi  [R=302,L]
+       RewriteRule category/novini/алткойн/  https://cryptodnes.bg/novini/altkoyni  [R=302,L]
+       RewriteRule category/novini/bitcoin-novini/  https://cryptodnes.bg/novini/bitkoyn  [R=302,L]
+       RewriteRule category/novini/drugi/  https://cryptodnes.bg/novini/drugi  [R=302,L]
+       RewriteRule category/novini/етериум-новини/  https://cryptodnes.bg/novini/eterium  [R=302,L]
+       RewriteRule category/regulacii/  https://cryptodnes.bg/novini/regulatsii  [R=302,L]
+       RewriteRule какво-е-блокчейн/    https://cryptodnes.bg/novini/faq  [R=302,L]
+       RewriteRule chesto-zadavani-vuprosi/   https://cryptodnes.bg/novini/faq [R=302,L]
+       RewriteRule какво-е-алткойн/   https://cryptodnes.bg/novini/faq [R=302,L]
+       RewriteRule как-се-копаят-биткойни-и-останалите-кр/   https://cryptodnes.bg/novini/faq  [R=302,L]
+       RewriteRule как-се-съхранява-биткойн/   https://cryptodnes.bg/novini/faq  [R=302,L]
+       RewriteRule какво-е-ico/   https://cryptodnes.bg/novini/faq [R=302,L]
+       RewriteRule какво-е-социална-търговия/  https://cryptodnes.bg/novini/faq  [R=302,L]
+       RewriteRule контакти/  https://cryptodnes.bg/contacts  [R=302,L]
+
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+
+
+        # Redirect index.php from URLs
+        RewriteCond %{THE_REQUEST} ^GET.*index\.php [NC]
+        RewriteRule (.*?)index\.php/*(.*) /$1$2 [R=301,NE,L]
+
+        RewriteCond %{THE_REQUEST} ^GET.*index\.php [NC]
+        RewriteRule (.*?)index\.php/*(.*) /$1$2 [R=301,NE,L]
+
+        #Redirect to non www
+#        RewriteBase /
+#        RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+#        RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+</IfModule>
+
+#
+##disable TRACE method
+#RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+#RewriteRule .* - [F]
+#
+##disable etags
+#FileETag none
+#Header unset ETag
+#
+##deflate gzip
+#SetOutputFilter DEFLATE
+#BrowserMatch ^Mozilla/4\.0[678] no-gzip\
+#BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+## Don't compress images
+#SetEnvIfNoCase Request_URI \
+#\.(?:gif|jpe?g|png)$ no-gzip dont-vary
+#
+#
+##expires....
+#AddType application/vnd.ms-fontobject .eot
+#AddType application/x-font-ttf .ttf
+#AddType application/x-font-opentype .otf
+#AddType application/x-font-woff .woff
+#AddType application/x-font-woff2 .woff2
+#AddType image/svg+xml .svg
+## Compress compressible fonts
+##AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-opentype image/svg+xml
+#
+#ExpiresActive on
+#ExpiresByType image/gif "access plus 2 years"
+#ExpiresByType image/png "access plus 2 years"
+#ExpiresByType image/jpg "access plus 2 years"
+#ExpiresByType image/jpeg "access plus 2 years"
+#ExpiresByType image/x-icon "access plus 2 years"
+#ExpiresByType text/javascript "access plus  2 years"
+#ExpiresByType text/css "access plus  2 years"
+#
+#ExpiresByType application/vnd.ms-fontobject "access plus 2 year"
+#ExpiresByType application/x-font-ttf "access plus 2 year"
+#ExpiresByType application/x-font-opentype "access plus 2 year"
+#ExpiresByType application/x-font-woff "access plus 2 year"
+#ExpiresByType application/x-font-woff2 "access plus 2 year"
+#ExpiresByType image/svg+xml "access plus 2 year"
+#
+##ExpiresDefault "access plus 10 days"
+#Header set Cache-Control "must-revalidate"
+#Header always set X-UA-Compatible "IE=Edge"
+#
+##Security
+#Header always set X-Content-Type-Options "nosniff"
+#Header always set X-Xss-Protection "1; mode=block"
+#Header always set Strict-Transport-Security "max-age=63072000; includeSubdomains;"
+#Header set Content-Secure-Policy "default-src 'self';"
+#
+## pass the default character set
+#AddDefaultCharset utf-8
